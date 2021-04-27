@@ -40,10 +40,6 @@ export default function Home() {
       .then((response) => {
         console.log(response);
       })
-      .catch((error) => {
-        console.log(error);
-      });
-
     console.log(values);
     window.alert(JSON.stringify(values, 0, 2));
   };

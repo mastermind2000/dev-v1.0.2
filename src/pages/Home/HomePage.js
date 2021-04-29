@@ -29,7 +29,7 @@ export default function Home() {
     policy: ""
   });
   const onSubmit = async (values) => {
-    const url = "https://v233taxhe6.execute-api.us-east-2.amazonaws.com/beta";
+    const url = "https://4veg3aetvd.execute-api.us-east-2.amazonaws.com/dev/entry";
     Axios.post(url, {
       name: values.name,
       email: values.email,
@@ -39,6 +39,8 @@ export default function Home() {
     })
       .then((response) => {
         console.log(response);
+      }).catch((error) => {
+        console.log(error);
       })
     console.log(values);
     window.alert(JSON.stringify(values, 0, 2));
